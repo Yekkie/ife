@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>resume</title>
+	<style>
+		.start{
+			font-size: 60px;
+			color: #999;
+		 	border: 1px dashed #ccc;
+			padding: 10px 40px;
+			width: 150px;
+			height: 80px;
+			text-align: center;
+			border-radius: 30px;
+			box-shadow: 5px 10px 20px #ccc;
+			cursor: pointer;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-left: -120px;
+			margin-top: -58px; 
+			overflow: hidden;
+		}
+		.start:hover{
+			color: #ccc;
+
+		}
+		.wrap{
+			padding: 20px 20px;
+			color: #999;
+			border-radius: 30px;
+			box-shadow: 5px 10px 20px #ccc;
+			border: 1px dashed #ccc;
+			cursor: pointer;
+			width: 600px;
+			height: 580px;
+			position: absolute;
+			font-size: 15px;
+			top: 50%;
+			left: 50%;
+			margin-left: -320px;
+			margin-top: -310px; 
+			overflow: auto;
+			display: none;
+			
+		}
+		
+		.wrap .connection span{
+			padding: 0px 50px 0px 10px;
+		}
+		.wrap table{
+			width: 500px;
+			border-spacing: 0;
+			line-height: 25px;
+			margin: 15px;
+		}
+		
+		.wrap table tr:nth-child(odd){
+			background-color: #ddd;
+		}
+		.wrap li{
+			margin-top: 8px;
+		}
+		.wrap .skill~div{
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+			border: 1px solid #ccc;
+			display: inline-block;
+			margin: 10px 20px;
+		}
+		.wrap .introduce{
+			width: 90%;
+			height: 120px;
+			border: 1px solid #ccc;
+		}
+		.scroll::-webkit-scrollbar{
+			width: 10px;
+		}
+		.scroll::-webkit-scrollbar-thumb{
+			border-radius: 30px;
+			display: none;
+		}
+		.scroll::-webkit-scrollbar-thumb:hover{
+			background: rgba(200,200,200,0.2);
+			display: block;
+
+		}
+	</style>
+	
+</head>
+<body>
+	<div class="start" id="start">简&nbsp;&nbsp;历</div>
+	<div class="photo"><img src="" alt=""></div>
+	<div class="wrap scroll" id="wrap">
+		<ul class="content">
+			<li><span>姓名：</span>XXX</li>
+			<li><span>生日：</span>1995/04/13</li>
+			<li><span>学历：</span>本科</li>
+			<li>
+				<span>联系方式：</span>
+				<p class="connection">
+					<span>Tel:150150150</span>
+					<span>Wechat:jhbnjjh</span>
+					<span>Github:gjhkuy</span>
+				</p>
+			</li>
+
+			<li>
+				<span>工作经验：</span>
+				<table>
+					<tr>
+						<td>公司</td>
+						<td>工作时间</td>
+						<td>职位</td>
+						<td>联系人</td>
+					</tr>
+					<tr>
+						<td>XXX有限公司</td>
+						<td>xxxx/xx-xxxx/xx</td>
+						<td>前端工程师</td>
+						<td>老王</td>
+					</tr>
+					<tr>
+						<td>XXX有限公司</td>
+						<td>xxxx/xx-xxxx/xx</td>
+						<td>前端工程师</td>
+						<td>老王</td>
+					</tr>
+					<tr>
+						<td>XXX有限公司</td>
+						<td>xxxx/xx-xxxx/xx</td>
+						<td>前端工程师</td>
+						<td>老王</td>
+					</tr>
+					<tr>
+						<td>XXX有限公司</td>
+						<td>xxxx/xx-xxxx/xx</td>
+						<td>前端工程师</td>
+						<td>老王</td>
+					</tr>
+				</table>
+			</li>
+			<li>
+				<span>项目经验：</span>
+				<ol class="example" type="I">
+					<li>
+						<dl>
+							<dt>项目A：</dt>
+								<dd>项目时间：2017.1-2017.8</dd>
+								<dd>项目描述：在项目A中负责了xxxxx</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>项目A：</dt>
+								<dd>项目时间：2017.1-2017.8</dd>
+								<dd>项目描述：在项目A中负责了xxxxx</dd>
+						</dl>
+					</li><li>
+						<dl>
+							<dt>项目A：</dt>
+								<dd>项目时间：2017.1-2017.8</dd>
+								<dd>项目描述：在项目A中负责了xxxxx</dd>
+						</dl>
+					</li><li>
+						<dl>
+							<dt>项目A：</dt>
+								<dd>项目时间：2017.1-2017.8</dd>
+								<dd>项目描述：在项目A中负责了xxxxx</dd>
+						</dl>
+					</li>
+				</ol>
+			</li>
+			<li>
+				<span class="skill">技能：</span><br>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</li>
+			<li><span>兴趣爱好：</span>吃饭睡觉玩游戏</li>
+			<li>
+				<span>自我介绍：</span>
+				<p class="introduce"></p>
+			</li>
+		</ul>
+	</div>
+<script>
+		document.getElementById('start').onclick=function(){
+			document.getElementById('wrap').style.display="block";
+			this.style.display="none";
+		};
+	</script>	
+</body>
+</html>
